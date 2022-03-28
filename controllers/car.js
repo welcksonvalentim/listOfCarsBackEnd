@@ -5,4 +5,4 @@ const getAllCars = async (_req, res) => {
   res.status(200).json(users);
 };
 
-module.exports = {getAllCars};
+module.exports = { getAllCars };
