@@ -9,16 +9,20 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       automaker: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       model: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       version: {
+        allowNull: true,
         type: Sequelize.STRING
       },
       image: {
-        type: Sequelize.VARCHAR
+        allowNull: true,
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,

@@ -3,7 +3,11 @@ const Car = (sequelize, DataTypes) => {
     automaker: DataTypes.STRING,
     model: DataTypes.STRING,
     version: DataTypes.STRING,
-    image: DataTypes.VARCHAR
+    image: DataTypes.STRING
+  },
+  {
+    sequelize,
+    modelName: 'Car',
   });
   return Car;
 };
