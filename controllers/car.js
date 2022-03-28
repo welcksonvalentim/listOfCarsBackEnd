@@ -1,8 +1,8 @@
-const { User } = require('../models');
+const { Car } = require('../models');
 
 const getAllCars = async (_req, res) => {
-  const users = await User.findAll();
-  res.status(200).json(users);
+  const cars = await Car.findAll();
+  res.status(200).json(cars);
 };
 
 module.exports = { getAllCars };
