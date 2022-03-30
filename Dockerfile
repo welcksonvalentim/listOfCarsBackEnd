@@ -1,6 +1,6 @@
-FROM node:alpine
+FROM node:14-alpine
 
-WORKDIR /index
+WORKDIR /app
 
 COPY package.json .
 
@@ -8,4 +8,4 @@ RUN npm install
 
 COPY . .
 
-CMD ["node", "index.js"]
+CMD ["npm", "start"]
