@@ -2,7 +2,7 @@ const express = require('express');
 require('dotenv').config();
 const cors = require('cors');
 
-const carsController = require('.controllers/car');
+const carsController = require('./controllers/car');
 
 const app = express();
 app.use((req, res, next) => {
