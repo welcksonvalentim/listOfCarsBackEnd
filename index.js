@@ -5,8 +5,11 @@ const cors = require('cors');
 const carsController = require('.controllers/car');
 
 const app = express();
-app.use(cors());
-
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*' )
+    app.use(cors());
+    next();
+})
 const PORT = process.env.PORT || 3000;
 
 app.get('/cars', carsController.getAllCars);
